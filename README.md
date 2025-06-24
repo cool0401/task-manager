@@ -46,6 +46,7 @@ pip install -r requirements.txt
 ```bash
 cd ../frontend
 npm install
+```
 
 ### 4. Setup Poller (Node.js Service)
 
@@ -90,21 +91,21 @@ macOS/Linux:
 ./setup.sh
 ./start-all.sh
 ```
-URLs
+### URLs
 Backend API: http://localhost:5000
 
 Frontend: http://localhost:3000
 
 Poller runs in background polling backend.
 
-Notes
+### Notes
 Ensure ports 5000 and 3000 are free
 
 Poller logs tasks and sends notifications (mock)
 
 For production, use PM2 (Node.js) and Gunicorn (Flask)
 
-#### Troubleshooting
+### Troubleshooting
 
 Python venv issues? Check Python version and activation
 npm errors? Verify Node.js and npm versions
